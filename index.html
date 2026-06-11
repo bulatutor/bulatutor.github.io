@@ -84,6 +84,8 @@
       text-decoration: none;
       font-weight: bold;
       font-size: 17px;
+      border: none;
+      cursor: pointer;
     }
 
     .trial {
@@ -109,6 +111,16 @@
       margin-top: 50px;
     }
   </style>
+
+  <script>
+    function showFullMessage() {
+      alert("To purchase BulaMath Tutor Full Version, please contact:\n\nEmail: sheikh@aizaenergystudio.com\nViber/WhatsApp: +679 9358287");
+    }
+
+    function showPremiumMessage() {
+      alert("To purchase BulaMath Tutor Premium Version, please contact:\n\nEmail: sheikh@aizaenergystudio.com\nViber/WhatsApp: +679 9358287");
+    }
+  </script>
 </head>
 
 <body>
@@ -148,13 +160,13 @@
       Download BulaMath Tutor Trial Version
     </a>
 
-    <a class="button full" href="mailto:sheikh@aizaenergystudio.com?subject=Purchase BulaMath Tutor Full Version&body=Hello, I am interested in purchasing BulaMath Tutor Full Version. Please send me the price and payment details.">
+    <button class="button full" onclick="showFullMessage()">
       Purchase BulaMath Tutor Full Version
-    </a>
+    </button>
 
-    <a class="button premium" href="mailto:sheikh@aizaenergystudio.com?subject=Purchase BulaMath Tutor Premium Version&body=Hello, I am interested in purchasing BulaMath Tutor Premium Version. Please send me the price, features, and payment details.">
+    <button class="button premium" onclick="showPremiumMessage()">
       Purchase BulaMath Tutor Premium Version
-    </a>
+    </button>
   </div>
 </section>
 
